@@ -18,20 +18,9 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'yes no App',
         debugShowCheckedModeBanner: false,
-        theme: AppTheme(selectedColor: 1).theme(),
+        theme: AppTheme(selectedColor: 5).theme(),
         home: const ChatScreen(),
       ),
     );
   }
-
-  // Scaffold myHomePage() {
-  //   return Scaffold(
-  //     appBar: AppBar(
-  //       title: const Text('Material App Bar'),
-  //     ),
-  //     body: const Center(
-  //       child: FilledButton.tonal(onPressed: null, child: Text('pícale compa')),
-  //     ),
-  //   );
-  // }
 }

@@ -13,9 +13,8 @@ class ChatScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       appBar: HerPresentation(
-        nombre: 'Madonna',
-        urlAvatar:
-            'https://www.tn23.tv/wp-content/uploads/2023/07/Madonna-agradece-a-su-familia-el-apoyo-durante-su-enfermedad--256x256.jpg',
+        nombre: 'Orange',
+        urlAvatar: 'http://placekitten.com/300/300',
       ),
       body: ChatView(),
     );
@@ -30,7 +29,7 @@ class ChatView extends StatelessWidget {
     final chatProvider = context.watch<ChatProvider>();
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
         child: Column(
           children: [
             Expanded(

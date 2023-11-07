@@ -26,9 +26,6 @@ class MessageFieldBox extends StatelessWidget {
       controller: textControl,
       decoration: inputDecoration,
       onFieldSubmitted: fieldSubmitCustom,
-      //onChanged: (value) {
-      //valores de tecla por tecla
-      //},
     );
   }
 
@@ -41,18 +38,19 @@ class MessageFieldBox extends StatelessWidget {
   InputDecoration inputDecoradorCustom(UnderlineInputBorder outLineInputBorder,
       TextEditingController textControl) {
     return InputDecoration(
-      hintText: 'End your message with a "?"',
+      hintText: 'Termina tu mensaje con un "?"',
       enabledBorder: outLineInputBorder,
       focusedBorder: outLineInputBorder,
       filled: true,
       suffixIcon: IconButton(
-          icon: const Icon(Icons.send_outlined),
-          onPressed: () {
-            //valor de la caja de texto
-            final textValue = textControl.value.text;
-            onValue(textValue);
-            textControl.clear();
-          }),
+        icon: const Icon(Icons.send_outlined),
+        onPressed: () {
+          //valor de la caja de texto
+          final textValue = textControl.value.text;
+          onValue(textValue);
+          textControl.clear();
+        },
+      ),
     );
   }
 }

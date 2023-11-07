@@ -15,12 +15,13 @@ class HerPresentation extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       leading: Padding(
-        padding: const EdgeInsets.all(4.0),
+        padding: const EdgeInsets.all(8.0),
         child: CircleAvatar(
           backgroundImage: NetworkImage(urlAvatar),
         ),
       ),
-      title: Text(nombre),
+      backgroundColor: Theme.of(context).primaryColor,
+      title: Text(nombre, style: const TextStyle(color: Colors.white)),
       centerTitle: false,
     );
   }
