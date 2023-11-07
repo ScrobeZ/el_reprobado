@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:yes_no_ejemplo/domain/dtos/message.dart';
-import 'package:yes_no_ejemplo/presentation/providers/chats/chat_provider.dart';
-import 'package:yes_no_ejemplo/presentation/widgets/chat/message_bubble.dart';
-import 'package:yes_no_ejemplo/presentation/widgets/shared/message_field_box.dart';
-import 'package:yes_no_ejemplo/presentation/widgets/herBar/her_presentation.dart';
+import 'package:el_reprobado/domain/dtos/message.dart';
+import 'package:el_reprobado/presentation/providers/chats/chat_provider.dart';
+import 'package:el_reprobado/presentation/widgets/chat/message_bubble.dart';
+import 'package:el_reprobado/presentation/widgets/shared/message_field_box.dart';
+import 'package:el_reprobado/presentation/widgets/herBar/her_presentation.dart';
 
 class ChatScreen extends StatelessWidget {
   const ChatScreen({super.key});

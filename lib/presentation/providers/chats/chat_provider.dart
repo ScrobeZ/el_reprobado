@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yes_no_ejemplo/config/helpers/get_yes_no_answer.dart';
+import 'package:el_reprobado/config/helpers/get_yes_no_answer.dart';
 
 import '../../../domain/dtos/message.dart';
 

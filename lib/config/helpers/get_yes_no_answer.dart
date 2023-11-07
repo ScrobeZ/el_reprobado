@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:yes_no_ejemplo/domain/dtos/message.dart';
-import 'package:yes_no_ejemplo/infrastructure/entities/yes_no_entity.dart';
+import 'package:el_reprobado/domain/dtos/message.dart';
+import 'package:el_reprobado/infrastructure/entities/yes_no_entity.dart';
 
 // https://quicktype.io/
 class GetYesNoAnswer {
