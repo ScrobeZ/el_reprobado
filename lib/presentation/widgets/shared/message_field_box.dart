@@ -11,7 +11,7 @@ class MessageFieldBox extends StatelessWidget {
     final textControl = TextEditingController();
     final outLineInputBorder = inputBorderCustom();
     final inputDecoration =
-        inputDecoradorCustom(outLineInputBorder, textControl);
+        inputDecoradorCustom(outLineInputBorder, textControl, context);
 
     void fieldSubmitCustom(textValue) {
       // valor al dar submit
@@ -31,19 +31,21 @@ class MessageFieldBox extends StatelessWidget {
 
   UnderlineInputBorder inputBorderCustom() {
     return UnderlineInputBorder(
-        borderSide: const BorderSide(color: Colors.transparent),
-        borderRadius: BorderRadius.circular(40));
+      borderSide: const BorderSide(color: Colors.transparent),
+      borderRadius: BorderRadius.circular(40),
+    );
   }
 
   InputDecoration inputDecoradorCustom(UnderlineInputBorder outLineInputBorder,
-      TextEditingController textControl) {
+      TextEditingController textControl, BuildContext context) {
     return InputDecoration(
       hintText: 'Termina tu mensaje con un "?"',
       enabledBorder: outLineInputBorder,
       focusedBorder: outLineInputBorder,
       filled: true,
       suffixIcon: IconButton(
-        icon: const Icon(Icons.send_outlined),
+        icon: const Icon(Icons.send),
+        color: Theme.of(context).primaryColor,
         onPressed: () {
           //valor de la caja de texto
           final textValue = textControl.value.text;
