@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:yes_no_ejemplo/config/theme/app_theme.dart';
-import 'package:yes_no_ejemplo/presentation/providers/chats/chat_provider.dart';
+import 'package:el_reprobado/config/theme/app_theme.dart';
+import 'package:el_reprobado/presentation/providers/chats/chat_provider.dart';
 import 'presentation/screens/chat/chat_screen.dart';
 
 void main() {
