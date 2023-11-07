@@ -15,10 +15,20 @@ class MyMessageBubble extends StatelessWidget {
           // height: 10,
           // width: 10,
           decoration: BoxDecoration(
-              color: colors.primary, borderRadius: BorderRadius.circular(20)),
-          child:  Padding(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                Colors.blue,
+                Colors.purple
+              ], // Personaliza los colores del degradado
+            ),
+            borderRadius: BorderRadius.circular(20),
+          ),
+          child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-            child: Text(message,
+            child: Text(
+              message,
               style: const TextStyle(color: Colors.white),
             ),
           ),
