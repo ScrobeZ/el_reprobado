@@ -7,14 +7,11 @@ class HerMessageBubble extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // buscar el tema del contexto
     final colors = Theme.of(context).colorScheme;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          // height: 10,
-          // width: 10,
           decoration: BoxDecoration(
               color: colors.tertiary, borderRadius: BorderRadius.circular(20)),
           child: Padding(
@@ -39,7 +36,6 @@ class _ImageBubble extends StatelessWidget {
   const _ImageBubble({this.urlGif});
   @override
   Widget build(BuildContext context) {
-    // return const Placeholder();
     final size = MediaQuery.of(context).size;
     return ClipRRect(
       borderRadius: BorderRadius.circular(20),
@@ -48,14 +44,20 @@ class _ImageBubble extends StatelessWidget {
         width: size.width * 0.7,
         height: 150,
         fit: BoxFit.cover,
-        loadingBuilder: (context, child, loadingProgress) =>
+        loadingBuilder: (
+          context,
+          child,
+          loadingProgress,
+        ) =>
             (loadingProgress == null)
                 ? child
                 : Container(
                     width: size.width * 0.7,
                     height: 150,
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                      vertical: 5,
+                    ),
                     child: const Text('cargando la imagen...'),
                   ),
       ),
